@@ -1,4 +1,4 @@
-# Ecommerce-Loja-de-Violao
+# Ecommerce Exact Guitar
 
 Este projeto Ecommerce Exact Guitar é inspirado no curso Bootstrap 5 do Básico ao Avançado do Matheus Battisti.
 
