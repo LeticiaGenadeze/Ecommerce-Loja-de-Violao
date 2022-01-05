@@ -40,6 +40,10 @@ body {
     color: #252525;
 }
 
+.white-color {
+    color: #fff;
+}
+
 /*Navbar*/
 #navbar .navbar-nav {
     flex-direction: row;
@@ -135,50 +139,345 @@ body {
 
 /*Bottom Navbar*/
 
-#bottom-navbar-container .container{
+#bottom-navbar-container .container {
     justify-content: flex-end;
 }
 
-#bottom-navbar-container a{
+#bottom-navbar-container a {
     font-weight: 600;
     color: #fff;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     font-size: 1.5em;
 }
 
 /*Banner*/
 
-#banners-container{
+#banners-container {
     padding: 0;
 }
 
-.carousel-caption{
+.carousel-caption {
     bottom: 5em;
     padding: 1em;
     left: 12%;
     right: 12%;
 }
 
-.carousel-caption h5{
+.carousel-caption h5 {
     font-size: 1.8em;
 }
 
 
 @media(min-width:768px) {
+
     #slider .carousel-item,
-    #slider img{
+    #slider img {
         height: 600px;
     }
 
-    .carousel-caption{
+    .carousel-caption {
         left: 23%;
         right: 23%;
     }
 
-    .carousel-caption h5{
+    .carousel-caption h5 {
         font-size: 4em;
     }
 
+}
+
+/* Mini Banner*/
+
+#mini-banners {
+    margin-top: -3em;
+    z-index: 10;
+}
+
+#mini-banners .col-12 {
+    z-index: 1;
+    height: 300px;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(min-width: 768px) {
+    #mini-banners .col-12 {
+        max-width: 30%;
+    }
+}
+
+#mini-banners .col-12 h2 {
+    text-transform: uppercase;
+    max-width: 50px;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+#mini-banners .col-12 img {
+    height: 220px;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#mini-banners .col-12 a {
+    font-weight: bold;
+    color: #FFF;
+    font-size: .8rem;
+    transition: .5s;
+}
+
+#mini-banners .col-12 a:hover {
+    color: #101010;
+}
+
+#mini-banners #mini-banner-1 a:hover,
+#mini-banners #mini-banner-3 a:hover {
+    color: #C09578;
+}
+
+#mini-banners #mini-banner-3 a {
+    color: #fff;
+}
+
+/* BEST SELLERS */
+#best-sellers {
+    padding: 4em 0;
+}
+
+#best-sellers .row {
+    margin: 0;
+}
+
+#best-sellers .col-md-3 {
+    padding: 0;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .title {
+        text-align: left;
+    }
+}
+
+.card {
+    text-align: center;
+    border-radius: 0;
+}
+
+.card img {
+    width: 140px;
+    margin: 2em auto;
+}
+
+.card .card-category {
+    font-size: .8rem;
+}
+
+.card .card-text {
+    margin: 2em 0;
+    font-weight: bold;
+}
+
+#best-sellers .btn {
+    background-color: transparent;
+    color: #C09578;
+    border-color: #C09578;
+}
+
+#best-sellers .btn:hover {
+    background-color: #C09578;
+    border-color: #C09578;
+    color: #fff;
+}
+
+/* Banner Desconto */
+
+#bottom-banner {
+    background-color: #101010;
+    padding: 6em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+#bottom-banner .offer-subtitle,
+#bottom-banner h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#bottom-banner .btn {
+    margin: 2em;
+    font-weight: bold;
+    padding: 1em;
+    background-color: transparent;
+    color: #C09578;
+    border-color: #C09578;
+}
+
+#bottom-banner .btn:hover {
+    background-color: #C09578;
+    border-color: #C09578;
+    color: #fff;
+}
+
+#bottom-banner img {
+    max-width: 175px;
+}
+
+@media(min-width: 768px) {
+    #bottom-banner h2 {
+        font-size: 6em;
+    }
+}
+
+/* Novos Produtos */
+
+#new-products {
+    margin-bottom: 5rem;
+}
+
+#new-products-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+}
+
+#new-products-banner h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+#new-products .col-md-4 {
+    padding: 0;
+}
+
+#new-products .card img {
+    height: 150px;
+    width: 90px;
+    margin: 2em auto;
+}
+
+#new-products .btn {
+    margin: 2em;
+    font-weight: bold;
+    padding: 1em;
+    background-color: transparent;
+    color: #C09578;
+    border-color: #C09578;
+}
+
+#new-products .btn:hover {
+    background-color: #C09578;
+    border-color: #C09578;
+    color: #fff;
+}
+
+
+/* FOOTER */
+#footer-links-container {
+    border-bottom: 1px solid #626262;
+}
+
+#footer .footer-column {
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer-links-container h3 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#footer-links-container li {
+    font-size: .8em;
+    text-align: center;
+}
+
+@media(mn-width: 795px) {
+
+    #footer .footer-column {
+        padding: 5em 2em;
+    }
+
+    #footer-links-container li {
+        text-align: left;
+    }
+}
+
+#footer-links-container li a {
+    text-decoration: none;
+}
+
+#footer-links-container li a:hover {
+    color: #C09578;
+}
+
+.footer-column .store-phone {
+    color: #C09578;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* NEWS */
+#newsletter-container {
+    background-color: #101010;
+    border-bottom: 1px solid #626262;
+    text-align: center;
+    padding: 20px;
+}
+
+#news-form {
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+#news-form i {
+    font-size: 1.5em;
+}
+
+#news-form .btn {
+    color: #FFF;
+}
+
+#social-container {
+    margin: 20px auto;
+}
+
+#social-container i {
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    color: #626262;
+    transition: .3s;
+}
+
+#social-container i:hover {
+    color: #C09578;
+}
+
+/* COPY */
+#copy-container {
+    text-align: center;
+    padding: 30px;
 }
